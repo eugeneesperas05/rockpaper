@@ -561,3 +561,139 @@ hr {
     width: 250px;
   }
 }
+
+/* /////// for my media queries (responsive) ///// */
+/* //////// mainGameContainer class only ////////////// */
+/* ///// small screen like phone//// */
+/* here */
+@media screen and (max-width: 630px) {
+  .cardDiv h2 {
+    font-size: 2.5rem;
+  }
+  .mainGameContainer {
+    width: 100%;
+    height: 100vh;
+  }
+  .mainGameContainerH1 h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    width: auto;
+    width: auto;
+  }
+  .gameCont {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .gameDiv {
+    width: 30%;
+    height: auto;
+  }
+
+  #Cont {
+    width: auto;
+    height: 100%;
+    border-radius: 100px;
+  }
+
+  #Cont h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .avatarCont {
+    width: auto;
+    height: 150px;
+  }
+
+  .avatarCont img {
+    width: auto;
+  }
+  .cardDiv {
+    padding: 0;
+  }
+  .cardDiv h2 {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .playerCompSpan {
+    width: auto;
+    height: 80px;
+  }
+  .playerCompSpan > div {
+    font-size: 1.7rem;
+  }
+
+  /* //////// for my resultCont class responsiveness ///////// */
+
+  .resultCont {
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+    gap: 15px;
+    padding: 30px 0 10px 0;
+  }
+  .resultCont > div {
+    width: 15%;
+    height: 100px;
+  }
+  #textResult {
+    width: 35%;
+    font-size: 2rem;
+  }
+
+  /* //////// for my gameBtns class responsiveness ///////// */
+
+  .pcName h2 {
+    font-size: 1rem;
+  }
+
+  .gameBtns {
+    width: auto;
+    gap: 10px;
+    padding: 5px;
+  }
+  .choiceBtn {
+    border: none;
+    width: 120px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #09d3c5;
+    font-size: 1rem;
+  }
+
+  /* //////// for my winnerDivPopUp class responsiveness ///////// */
+
+  .winnerDivPopUp {
+    width: 100%;
+    height: 100vh;
+  }
+  .winnerDivPopUpH1,
+  .winnerName,
+  .resetGameBtn {
+    width: 250px;
+  }
+  .winnerDivPopUpH1 {
+    text-align: center;
+    margin: 35px auto;
+  }
+  .winnerName {
+    font-size: 3rem;
+    padding: 5px;
+    margin: 10px;
+  }
+  .congratsMsg {
+    padding: 10px;
+    margin: 0;
+  }
+  .resetGameBtn {
+    border-radius: 50px;
+  }
+  .cardWinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .winnerAvatar {
+    width: 250px;
+  }
+}

@@ -48,6 +48,9 @@
       </div>
       <div class="gameCont">
         <div class="gameDiv" id="PlayerCont">
+          <div class="pcName">
+            <h2>Player</h2>
+          </div>
           <div class="avatarCont" id="playerAvatar"></div>
           <div class="cardDiv">
             <h2 class="playerName">Player</h2>
@@ -61,6 +64,9 @@
           <h1>VS</h1>
         </div>
         <div class="gameDiv" id="ComputerCont">
+          <div class="pcName">
+            <h2>Computer</h2>
+          </div>
           <div class="avatarCont" id="computerAvatar"></div>
           <div class="cardDiv">
             <h2 class="computerName">Computer</h2>
@@ -84,28 +90,24 @@
         <button class="choiceBtn scissor">Scissor</button>
       </div>
     </div>
+    <!--end of game interface-->
 
-    <div class="winnerDivPopUp">
-      <h1 class="winnerDivPopUpH1">WINNER</h1>
-      <div class="cardWinner">
-        <div class="winnerAvatar"></div>
-        <h2 class="winnerName">name here</h2>
+      <div class="winnerDivPopUp">
+        <h1 class="winnerDivPopUpH1">WINNER</h1>
+        <div class="cardWinner">
+          <div class="winnerAvatar"></div>
+          <h2 class="winnerName">name here</h2>
+        </div>
+        <div class="lastDivContainer">
+          <h1 class="congratsMsg">Congratulations!!!</h1>
+          <audio
+            id="winnerSound"
+            src="./confettiSound.mp3"
+            preload="auto"
+          ></audio>
+          <div class="resetGameBtn">Play Again</div>
+        </div>
       </div>
-      <div class="lastDivContainer">
-        <h1 class="congratsMsg">Congratulations!!!</h1>
-        <audio
-          id="winnerSound"
-          src="./confettiSound.mp3"
-          preload="auto"
-        ></audio>
-        <div class="resetGameBtn">Play Again</div>
-      </div>
-    </div>
-
-    <!-- <div class="avatarCont">
-      <div><img src="../apin.jpg" alt="" class="avatar" /></div>
-      <div class="avatarDisplay"></div>
-    </div> -->
     <script src="rockPaper.js"></script>
   </body>
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rockPaper.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.2"></script>
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <div class="popUpDiv">
+      <div class="avatarh1">
+        <h1>Choose a Champion</h1>
+        <hr />
+      </div>
+      <div class="avatarContainer">
+        <div class="avatar">
+          <img src="./gobta.jpg" alt="" class="userAvatar" />
+          <div class="avatarName"><h3>Gobta</h3></div>
+        </div>
+        <div class="avatar">
+          <img src="./benimaru.jpg" alt="" class="userAvatar" />
+          <div class="avatarName"><h3>Benimaru</h3></div>
+        </div>
+        <div class="avatar">
+          <img src="./soei.jpg" alt="" class="userAvatar" />
+          <div class="avatarName"><h3>Soei</h3></div>
+        </div>
+        <div class="avatar">
+          <img src="./ranga.jpg" alt="" class="userAvatar" />
+          <div class="avatarName"><h3>Ranga</h3></div>
+        </div>
+        <div class="avatar">
+          <img src="./rimuru.jpg" alt="" class="userAvatar" />
+          <div class="avatarName"><h3>Rimuru</h3></div>
+        </div>
+      </div>
+      <div class="computerAvatar">
+        <h2>Computer Will Select a Champion Randomly</h2>
+      </div>
+    </div>
+
+    <!--end of modal popUp-->
+    <!--game interface-->
+    <div class="mainGameContainer">
+      <div class="mainGameContainerH1">
+        <h1>ROCK PAPER SCISSOR</h1>
+      </div>
+      <div class="gameCont">
+        <div class="gameDiv" id="PlayerCont">
+          <div class="avatarCont" id="playerAvatar"></div>
+          <div class="cardDiv">
+            <h2 class="playerName">Player</h2>
+          </div>
+
+          <span class="playerCompSpan">
+            <div class="playerChoice"></div>
+          </span>
+        </div>
+        <div class="gameDiv" id="Cont">
+          <h1>VS</h1>
+        </div>
+        <div class="gameDiv" id="ComputerCont">
+          <div class="avatarCont" id="computerAvatar"></div>
+          <div class="cardDiv">
+            <h2 class="computerName">Computer</h2>
+          </div>
+
+          <span class="playerCompSpan">
+            <div class="computerChoice"></div>
+          </span>
+        </div>
+      </div>
+
+      <div class="resultCont">
+        <div id="playerCount">0</div>
+        <div id="textResult">Result Here!</div>
+        <div id="computerCount">0</div>
+      </div>
+
+      <div class="gameBtns">
+        <button class="choiceBtn rock">Rock</button>
+        <button class="choiceBtn paper">Paper</button>
+        <button class="choiceBtn scissor">Scissor</button>
+      </div>
+    </div>
+
+    <div class="winnerDivPopUp">
+      <h1 class="winnerDivPopUpH1">WINNER</h1>
+      <div class="cardWinner">
+        <div class="winnerAvatar"></div>
+        <h2 class="winnerName">name here</h2>
+      </div>
+      <div class="lastDivContainer">
+        <h1 class="congratsMsg">Congratulations!!!</h1>
+        <audio
+          id="winnerSound"
+          src="./confettiSound.mp3"
+          preload="auto"
+        ></audio>
+        <div class="resetGameBtn">Play Again</div>
+      </div>
+    </div>
+
+    <!-- <div class="avatarCont">
+      <div><img src="../apin.jpg" alt="" class="avatar" /></div>
+      <div class="avatarDisplay"></div>
+    </div> -->
+    <script src="rockPaper.js"></script>
+  </body>
+</html>

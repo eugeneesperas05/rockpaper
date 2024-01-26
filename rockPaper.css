@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #033e3b;
+}
+
+/*    for the popUp display    */
+
+.popUpDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+  background: #30706cec;
+}
+.avatarh1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+  gap: 1rem;
+}
+.avatarh1 h1 {
+  color: #fff;
+  padding: 10px;
+  text-shadow: 2px 2px 10px #41e4c9;
+  border: 1px solid #fff;
+}
+hr {
+  height: 5px;
+  background: #41e4c9;
+  width: 82%;
+  border: none;
+}
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 15%;
+  height: auto;
+  background: #023e3a;
+  border-radius: 10px 10px 5px 5px;
+  overflow: hidden;
+  color: #eee;
+}
+.avatar:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 80px 30px #09d3c5;
+  color: #09d3c5;
+  text-shadow: 1px 1px 20px 10px #000;
+}
+.avatar img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.avatarName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 24px;
+  padding: 10px;
+}
+.computerAvatar {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.computerAvatar h2 {
+  text-align: center;
+  text-wrap: balance;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000;
+  padding: 50px;
+}
+
+/*    for the main html display    */
+.mainGameContainerH1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.mainGameContainerH1 h1 {
+  width: 40%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000;
+  font-size: 3rem;
+}
+#Cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Cont {
+  font-size: 7em;
+  color: #000;
+  text-shadow: 1px 1px 5px #fff;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  margin-top: 100px;
+}
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #31f6e2;
+  padding: 10px;
+}
+.cardDiv h2 {
+  font-size: 3rem;
+  color: #000;
+  text-shadow: 1px 1px 5px #fff;
+}
+.mainGameContainer {
+  display: none;
+  height: auto;
+}
+
+.gameCont {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.gameDiv {
+  width: 350px;
+  height: auto;
+  padding: 0.3rem;
+  background: #30706cec;
+}
+
+.playerChoice,
+.computerChoice {
+  font-size: 40px;
+  text-decoration: none;
+}
+#textResult {
+  font-size: 50px;
+  color: #fff;
+}
+
+.resultCont {
+  display: flex;
+  margin-top: 2rem;
+  gap: 6rem;
+  justify-content: center;
+}
+.resultCont > div {
+  border-radius: 10px;
+}
+
+.resultCont > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  background: #30706cec;
+}
+#playerCount,
+#computerCount {
+  font-size: 100px;
+  color: #fff;
+}
+
+.gameBtns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.choiceBtn {
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+  background: #2c6d68;
+  border-radius: 50px;
+}
+
+.choiceBtn:hover {
+  color: #23f3e5;
+  cursor: pointer;
+  box-shadow: 0px 0px 80px 30px #09d3c5;
+  background: rgb(3, 117, 217);
+  border: 1px solid #fff;
+}
+
+.playerCompSpan,
+.avatarCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  background: #9ccecb;
+  /* margin-bottom: 2rem; */
+}
+#computerAvatar img,
+#playerAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* ///// for my winner POPUP Modal //// */
+.winnerDivPopUp {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  background: #30706cf7;
+}
+
+.winnerDivPopUpH1 {
+  text-align: center;
+  margin: 5rem auto 2rem auto;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 350px;
+}
+.cardWinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.winnerAvatar {
+  width: 350px;
+  height: 350px;
+  background: #10e9da;
+}
+.winnerAvatar img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.winnerName {
+  color: #fff;
+  border: 2px solid #fff;
+  width: 350px;
+  padding: 20px;
+}
+.lastDivContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.congratsMsg {
+  margin: 2rem auto 2rem auto;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 350px;
+}
+.resetGameBtn {
+  margin: 2rem auto 2rem auto;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 250px;
+  font-size: 30px;
+  padding: 10px;
+}
+.resetGameBtn:hover {
+  background: #30706cf7;
+  color: #23f3e5;
+  cursor: pointer;
+  box-shadow: 0px 0px 80px 30px #09d3c5;
+}
+
+/* /////// for my media queries (responsive) ///// */
+/* //////// POPUPDIV class only ////////////// */
+/* ///// nest hub max 1280 //// */
+@media screen and (max-width: 1280px) {
+  .avatarContainer {
+    height: auto;
+  }
+
+  .avatarh1 {
+    margin-bottom: 2rem;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .avatar {
+    height: 250px;
+    margin: -50px 0 -30px 0;
+  }
+
+  .avatarName {
+    font-size: 15px;
+  }
+
+  .computerAvatar h2 {
+    font-size: 30px;
+  }
+}
+
+/* ///// nest hub 1024 //// */
+@media screen and (max-width: 1024px) {
+  .avatarContainer {
+    height: auto;
+  }
+
+  .avatar {
+    height: 200px;
+    margin: -50px 0 -30px 0;
+  }
+
+  .avatarName {
+    font-size: 12px;
+  }
+
+  .computerAvatar h2 {
+    font-size: 30px;
+  }
+}
+
+/* ///// 600px //// */
+@media screen and (max-width: 600px) {
+  .avatarh1 {
+    font-size: 10px;
+  }
+
+  .avatarName {
+    font-size: 10px;
+  }
+
+  .computerAvatar h2 {
+    font-size: 20px;
+  }
+}
+
+/* ///// 450px //// */
+@media screen and (max-width: 450px) {
+  .popUpDiv {
+    width: 98%;
+  }
+
+  .avatarh1 {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .avatarContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+
+    margin-top: -100;
+  }
+
+  .avatar {
+    margin: 0 auto;
+    width: 100px;
+    height: 150px;
+  }
+}
+
+/* ///// 345px //// */
+@media screen and (max-width: 345px) {
+  .popUpDiv {
+    width: 99%;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 150px;
+  }
+
+  .computerAvatar h2 {
+    font-size: 15px;
+  }
+}
+
+/* ///// 280px //// */
+@media screen and (max-width: 280px) {
+  .popUpDiv {
+    margin: 0 auto;
+  }
+
+  .avatarContainer {
+    gap: 2px;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 150px;
+  }
+  .computerAvatar h2 {
+    font-size: 15px;
+  }
+}
+
+/* /////// for my media queries (responsive) ///// */
+/* //////// mainGameContainer class only ////////////// */
+/* ///// nest hub max 1600 //// */
+
+* {
+  border: 1px solid;
+}
+
+@media screen and (max-width: 1600px) {
+  .cardDiv h2 {
+    font-size: 2.5rem;
+  }
+}

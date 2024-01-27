@@ -135,7 +135,7 @@ hr {
 }
 .mainGameContainer {
   display: none;
-  height: auto;
+  height: 100vh;
 }
 
 .gameCont {
@@ -384,7 +384,6 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: auto;
-
     margin-top: -100;
   }
 
@@ -427,138 +426,6 @@ hr {
   }
   .computerAvatar h2 {
     font-size: 15px;
-  }
-}
-
-/* /////// for my media queries (responsive) ///// */
-/* //////// mainGameContainer class only ////////////// */
-/* ///// small screen like phone//// */
-
-@media screen and (max-width: 430px) {
-  .cardDiv h2 {
-    font-size: 2.5rem;
-  }
-  .mainGameContainer {
-    width: 100%;
-    height: 100vh;
-  }
-  .mainGameContainerH1 h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    text-wrap: nowrap;
-    width: auto;
-  }
-  .gameCont {
-    width: 100%;
-    height: auto;
-    gap: 1rem;
-    margin-bottom: 0;
-  }
-  .gameDiv {
-    width: 30%;
-    height: auto;
-  }
-
-  #Cont {
-    width: auto;
-    height: 100%;
-    border-radius: 100px;
-  }
-
-  #Cont h1 {
-    font-size: 2rem;
-    padding: 0.5rem;
-  }
-  .avatarCont {
-    width: auto;
-    height: 150px;
-  }
-
-  .avatarCont img {
-    width: auto;
-  }
-  .cardDiv {
-    padding: 0;
-  }
-  .cardDiv h2 {
-    font-size: 1rem;
-    padding: 0;
-  }
-  .playerCompSpan {
-    width: auto;
-    height: 80px;
-  }
-  .playerCompSpan > div {
-    font-size: 1.7rem;
-  }
-
-  /* //////// for my resultCont class responsiveness ///////// */
-
-  .resultCont {
-    width: 100%;
-    height: auto;
-    gap: 1rem;
-    padding: 5px;
-  }
-  .resultCont > div {
-    width: 25%;
-    height: 100px;
-  }
-  #textResult {
-    width: 50%;
-    font-size: 2rem;
-  }
-
-  /* //////// for my gameBtns class responsiveness ///////// */
-
-  .pcName h2 {
-    font-size: 1rem;
-  }
-
-  .gameBtns {
-    gap: 0.8rem;
-    padding: 5px;
-  }
-  .choiceBtn {
-    border: none;
-    padding: 15px;
-    box-shadow: 0px 0px 5px #09d3c5;
-  }
-
-  /* //////// for my winnerDivPopUp class responsiveness ///////// */
-
-  .winnerDivPopUp {
-    width: 100%;
-    height: 100vh;
-  }
-  .winnerDivPopUpH1,
-  .winnerName,
-  .resetGameBtn {
-    width: 250px;
-  }
-  .winnerDivPopUpH1 {
-    text-align: center;
-    margin: 35px auto;
-  }
-  .winnerName {
-    font-size: 3rem;
-    padding: 5px;
-    margin: 10px;
-  }
-  .congratsMsg {
-    padding: 10px;
-    margin: 0;
-  }
-  .resetGameBtn {
-    border-radius: 50px;
-  }
-  .cardWinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .winnerAvatar {
-    width: 250px;
   }
 }
 
@@ -659,6 +526,138 @@ hr {
     padding: 15px;
     box-shadow: 0px 0px 5px #09d3c5;
     font-size: 1rem;
+  }
+
+  /* //////// for my winnerDivPopUp class responsiveness ///////// */
+
+  .winnerDivPopUp {
+    width: 100%;
+    height: 100vh;
+  }
+  .winnerDivPopUpH1,
+  .winnerName,
+  .resetGameBtn {
+    width: 250px;
+  }
+  .winnerDivPopUpH1 {
+    text-align: center;
+    margin: 35px auto;
+  }
+  .winnerName {
+    font-size: 3rem;
+    padding: 5px;
+    margin: 10px;
+  }
+  .congratsMsg {
+    padding: 10px;
+    margin: 0;
+  }
+  .resetGameBtn {
+    border-radius: 50px;
+  }
+  .cardWinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .winnerAvatar {
+    width: 250px;
+  }
+}
+
+/* /////// for my media queries (responsive) ///// */
+/* //////// mainGameContainer class only ////////////// */
+/* ///// small screen like phone//// */
+
+@media screen and (max-width: 430px) {
+  .cardDiv h2 {
+    font-size: 2.5rem;
+  }
+  .mainGameContainer {
+    width: 100%;
+    height: 100vh;
+  }
+  .mainGameContainerH1 h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    width: auto;
+  }
+  .gameCont {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .gameDiv {
+    width: 30%;
+    height: auto;
+  }
+
+  #Cont {
+    width: auto;
+    height: 100%;
+    border-radius: 100px;
+  }
+
+  #Cont h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .avatarCont {
+    width: auto;
+    height: 150px;
+  }
+
+  .avatarCont img {
+    width: auto;
+  }
+  .cardDiv {
+    padding: 0;
+  }
+  .cardDiv h2 {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .playerCompSpan {
+    width: auto;
+    height: 80px;
+  }
+  .playerCompSpan > div {
+    font-size: 1.7rem;
+  }
+
+  /* //////// for my resultCont class responsiveness ///////// */
+
+  .resultCont {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    padding: 20px 30px;
+  }
+  .resultCont > div {
+    width: 25%;
+    height: 100px;
+  }
+  #textResult {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+
+  /* //////// for my gameBtns class responsiveness ///////// */
+
+  .pcName h2 {
+    font-size: 1rem;
+  }
+
+  .gameBtns {
+    gap: 0.8rem;
+    padding: 5px;
+  }
+  .choiceBtn {
+    border: none;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #09d3c5;
   }
 
   /* //////// for my winnerDivPopUp class responsiveness ///////// */
